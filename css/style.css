@@ -60,6 +60,27 @@ body{
 .skills{
     padding: 1%;
 }
+.column_skills{
+    float: left;
+    width: 50%;
+}
+.skills::after{
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+
+/* li::marker{ --hue: 250; font-size: 1em; } */
+li {
+    /* color:#fff; */
+    /* list-style:none; */
+    /* position: relative; */
+    /* padding-left:50px; */
+    line-height: 1.5;
+    /* font-size:32px; */
+    /* content: '-'; */
+  }
 .experience{
     padding: 1%;
 }
