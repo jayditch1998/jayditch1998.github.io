@@ -1,0 +1,78 @@
+body{
+    background-color: #ECF0F1;
+}
+.container{
+    width: auto;
+    height: auto;
+    background-color: #ffff;
+    color: #212F3D;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    /* border-radius: 2%; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header{
+    background-color: #5F6A6A;
+    text-align: center;
+    color: #F8F8FF;
+    /* padding: 1%; */
+    /* border-radius: 2%; */
+}
+.name{
+    padding: 1%;
+}
+.csv{
+    background-color: #404242;
+    color: rgb(206, 199, 199);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+}
+.csv:hover{
+    background-color: darkgrey;
+    color: #404242;
+}
+.about_me{
+    padding: 1%;
+}
+.column_about_me{
+    float: left;
+    width: 50%;
+}
+/* clear float left */
+.about_me::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.table_about_me{
+    border-spacing: 10px;
+    width:100%;
+    margin-left: 5%;
+}
+.skills{
+    padding: 1%;
+}
+.experience{
+    padding: 1%;
+}
+.education{
+    padding: 1%;
+}
+/* <!-- 
+.footer {
+    width: auto;
+    height: auto;
+    background-color: #666666;
+    color: #FFF;
+    margin-top: 12px;
+    margin-right: 10%;
+    margin-left: 10%;
+    } --> */
