@@ -166,14 +166,59 @@ body.active .wrapper .section{
     border-spacing: 30px 1px;
 }
 
+.skills{
+    float: left;
+    width: 50%;
+}
+.skill_container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 .skills table{
-    width: 100%;
+    width: 50%;
     text-align: left;
+	margin-left: 5%;
     /* padding-left: 2%; */
     /* border-collapse: separate; */
-    border-spacing: 30px 1px;
+    /* border-spacing: 10px 1px; */
 }
 .skills table ul{
     padding-left: 10%;
 
+}
+.skills progress {
+	/* display:inline-block; */
+	width:190px;
+	height:20px;
+	padding:5px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+.skills progress::-webkit-progress-bar {
+	height:11px;
+	width: 100%;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+.skills progress::-webkit-progress-value {
+	/* display:inline-block; */
+	float:left;
+	height:11px;
+	/* margin:0px -10px 0 0; */
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #666 inset;
+}
+.projects_container .projects{
+	margin-left: 5%;
 }
