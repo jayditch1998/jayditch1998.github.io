@@ -91,7 +91,7 @@ hr{
  
 
 .wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
+.wrapper .sidebar ul li .active{
 	color: #966919;
 
 	background:white;

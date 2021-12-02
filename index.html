@@ -55,11 +55,11 @@
 				<br>
 				</div>
 				<br>
-				<hr>
+				<hr id="skills">
 				<br>
 				<div class="skill_container">
 				<h2>Skills</h2>
-					<div class="skills" id="skills">
+					<div class="skills">
 					
 						<br>
 						<table>
@@ -89,7 +89,7 @@
 							</tr>
 						</table>
 					</div>
-					<div class="skills" id="skills">
+					<div class="skills">
 						<table>
 							<br>
 							<tr>
@@ -113,29 +113,54 @@
 				</div>
 				
 				<br>
-				<hr>
+				<hr id="projects">
 				<br>
 				<div class="projects_container">
 					<h2>Projects</h2>
 					<br>
 					<div class="projects">
 						<ul>
-							<li><b>Project Management System</b> <<i><u> https://www.peobenguet.com </u></i>></li>
+							<li><b>Project Management System</b></li>
 							<p>- I developed a project-based system called Project Management System for the Provincial Engineering Office of Benguet, Philippines. I mainly used PHP, JAVASCRIPT, HTML, CSS, BOOTSTRAP, AND SQL for this project. This project records and manages the projects/contracts of the Provincial Engineering Office such as Road constructions, Schools, Buildings, etc. It records the Budgets, Contractors, and Dates for the project.</p>
+							<h4>Link: <i> <a target="_blank" href="https://www.peobenguet.com">https://www.peobenguet.com</a> </i> </h4>
 							<br>
-							<li><b>Inventrory Management System</b> <<i><u> https://ims-cyrusv.com </u></i>></li>
+							<li><b>Inventrory Management System</b></li>
 							<p>- This Project is a Web-based Inventory Management System of Dep-Ed Located at Baguio City that allows the Employees of Dep-Ed and Approving Authority to send a request using different forms. It consists of two roles which are the Admin and the User or Employees. The system allows the Users to monitor their requested Equipment, Supplies, and also items that are requested. Every user has a dashboard that allows them to monitor or check the number of available stocks and the number of requested forms.</p>
+							<h4>Link: <i> <a target="_blank" href="https://ims-cyrusv.com">https://ims-cyrusv.com</a> </i> </h4>
 						</ul>
 					</div>
 				</div>
 				<br>
-				<hr>
+				<hr id="experience">
 				<br>
-				<h2>Experience</h2>
+				<div class="projects_container">
+					<h2>Experience</h2>
+					<br>
+					<div class="projects">
+						<ul>
+							<li><b>Software Developer</b></li>
+							<p>Jigzen Technologies <small>(Full-time)</small> </p>
+							<p>November 2020 - May 2021</p>
+							<br>
+							<li><b>Junior Programmer</b></li>
+							<p>NMS Philippines <small>(Full-time)</small></p>
+							<p>August 2021 - Present</p>
+						</ul>
+					</div>
+				</div>
 				<br>
-				<hr>
+				
+				<hr id="education">
 				<br>
-				<h2>Education</h2>
+				<div class="projects_container">
+					<h2>Education</h2>
+					<br>
+					<div class="projects">
+						<h4>Saint Louis University - Maryheights Campus, Baguio City</h4>
+						<p>Bachelor of Science in Information Technology</p>
+						<p>2015 - 2020</p>
+					</div>
+				</div>
 				<br>
 				<hr>
 				
@@ -149,33 +174,33 @@
 				<br>
 				<p>Hi, My name is Jayditch Balansi and I'm a Web Developer. Welcome to my Portfolio</p>
 			</div>
-            <ul>
+            <ul class="nav">
                 <li>
-                    <a href="#aboutme" class="active">
+                    <a href="#aboutme">
                         <span class="icon"><i class="fas fa-user"></i></span>
                         <span class="item">About Me</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#skills">
                         <span class="icon"><i class="fas fa-code"></i></span>
                         <span class="item">Skills</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projects">
                         <span class="icon"><i class="fas fa-atlas"></i></span>
                         <span class="item">Projects</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#experience">
                         <span class="icon"><i class="fas fa-clipboard-check"></i></span>
                         <span class="item">Experience</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#education">
                         <span class="icon"><i class="fas fa-book"></i></span>
                         <span class="item">Education</span>
                     </a>
@@ -187,3 +212,9 @@
  
 </body>
 </html>
+<script>
+	$(".nav a").on("click", function(){
+		$(".nav").find(".active").removeClass("active");
+		$(this).parent().addClass("actvie");
+	})
+</script>
